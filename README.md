@@ -13,6 +13,6 @@ Installable via [Bower](http://bower.io):
 
     bower install fontkit-bangers
     
-The package contains both [css]('styles/font.css') and [less]('src/less/bangers.less') files.
+The package contains both [css](styles/font.css) and [less](src/less/bangers.less) files.
 
 To see the font in action, the package contains an [example](docs/examples/primary.html) to view. 
