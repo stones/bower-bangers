@@ -1,0 +1,21 @@
+{
+  "name": "fontkit-bangers",
+  "version": "1.0.0",
+  "homepage": "https://github.com/stones/bower-bangers",
+  "authors": [
+    "Tom Stones <tom@tomstones.com.au>"
+  ],
+  "description": "A webfont kit for the Bangers font found at https://www.google.com/fonts/specimen/Bangers",
+  "main": "styles/font.css",
+  "keywords": [
+    "fontkit", "bangers", "google font"
+  ],
+  "license": "DBAD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

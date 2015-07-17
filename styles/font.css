@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Bangers';
+  src: url('../fonts/bangers/bangers.regular.eot');
+  src: url('../fonts/bangers/bangers.regular.eot?#iefix') format('embedded-opentype'), url('../fonts/bangers/bangers.regular.woff') format('woff'), url('../fonts/bangers/bangers.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
