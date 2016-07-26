@@ -1,23 +1,18 @@
-.font-face( $family-name, $font-path, $font-weight:normal, $font-style:normal, $include-svg:false ) when ($include-svg) {
+@mixin font-face( $family-name, $font-path, $font-weight:normal, $font-style:normal, $include-svg:false ) {
   @font-face {
     font-family: $family-name;
-    src: url('#{$font-path}.eot');
-    src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}.woff') format('woff'),
-    url('#{$font-path}.ttf') format('truetype'),
-    url('#{$font-path}.svg##{$family-name}') format('svg');
-    font-weight: $font-weight;
-    font-style: $font-style;
-  }
-}
-
-.font-face( $family-name, $font-path, $font-weight:normal, $font-style:normal, $include-svg:false ) when not ($include-svg) {
-  @font-face {
-    font-family: $family-name;
-    src: url('#{$font-path}.eot');
-    src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
-    url('#{$font-path}.woff') format('woff'),
-    url('#{$font-path}.ttf') format('truetype');
+    @if $include-svg == true {
+      src: url('#{$font-path}.eot');
+      src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}.woff') format('woff'),
+      url('#{$font-path}.ttf') format('truetype');
+    } @else {
+      src: url('#{$font-path}.eot');
+      src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}.woff') format('woff'),
+      url('#{$font-path}.ttf') format('truetype'),
+      url('#{$font-path}.svg##{$family-name}') format('svg');
+    }
     font-weight: $font-weight;
     font-style: $font-style;
   }
