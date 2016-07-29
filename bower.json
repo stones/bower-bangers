@@ -6,9 +6,16 @@
     "Tom Stones <tom@tomstones.com.au>"
   ],
   "description": "A webfont kit for the Bangers font found at https://www.google.com/fonts/specimen/Bangers",
-  "main": "styles/font.css",
+  "main": [
+    "styles/font.css",
+    "fonts/bangers/*"
+  ],
   "keywords": [
-    "fontkit", "bangers", "google font"
+    "fontkit",
+    "bangers",
+    "google font",
+    "fonts",
+    "web font"
   ],
   "license": "DBAD",
   "ignore": [
